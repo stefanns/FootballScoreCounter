@@ -3,7 +3,7 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
     </style>
-    <style name="AppTheme.Grey">
+    <style name="AppTheme.Green">
         <item name="colorButtonNormal">@color/colorButton</item>
     </style>
     //for team text

@@ -1,31 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.android.footballscorecounter.MainActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true">
+    android:fillViewport="true"
+    tools:context="com.example.android.footballscorecounter.MainActivity">
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="600dp"
             android:orientation="vertical">
+
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="3"
-                android:scaleType="centerCrop"
+                android:layout_weight="2"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
                 android:src="@drawable/green_grad" />
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:scaleType="centerCrop"
-                android:layout_weight="7"
+                android:layout_weight="5"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
                 android:src="#E4DED7" />
         </LinearLayout>
 
@@ -39,15 +42,20 @@
             android:text="@string/matches"
             android:textColor="#ffffff"
             android:textSize="20sp" />
-        <!---TeamA-->
+
         <LinearLayout
+            android:id="@+id/match_box"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/header"
-            android:layout_margin="20dp"
-            android:background="@drawable/layout_bg"
+            android:layout_marginBottom="@dimen/margin24"
+            android:layout_marginLeft="@dimen/margin32"
+            android:layout_marginRight="@dimen/margin32"
+            android:layout_marginTop="@dimen/margin24"
+            android:background="@drawable/match_box"
             android:orientation="horizontal">
 
+            <!---Liverpool-->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -85,7 +93,7 @@
                     android:onClick="goalForLiverpool"
                     android:text="@string/goal"
                     android:textAllCaps="true"
-                    android:theme="@style/AppTheme.Grey" />
+                    android:theme="@style/AppTheme.Green" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -102,7 +110,7 @@
                         android:onClick="foulForLiverpool"
                         android:text="@string/foul"
                         android:textAllCaps="true"
-                        android:theme="@style/AppTheme.Grey" />
+                        android:theme="@style/AppTheme.Green" />
 
                     <TextView
                         android:id="@+id/liverpool_foul"
@@ -111,7 +119,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:text="0" />
+                        android:text="@string/_0" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -123,8 +131,8 @@
                     <Button
                         android:id="@+id/red_liverpool"
                         style="?android:attr/borderlessButtonStyle"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
+                        android:layout_width="@dimen/button_width"
+                        android:layout_height="@dimen/button_height"
                         android:background="@drawable/icon_red_card"
                         android:onClick="redCardLiverpool"
                         android:text="" />
@@ -132,8 +140,8 @@
                     <Button
                         android:id="@+id/yellow_liverpool"
                         style="?android:attr/borderlessButtonStyle"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
+                        android:layout_width="@dimen/button_width"
+                        android:layout_height="@dimen/button_height"
                         android:background="@drawable/icon_yelow_card"
                         android:onClick="yellowCardLiverpool"
                         android:text="" />
@@ -145,11 +153,11 @@
             <View
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
-                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/margin16"
                 android:layout_marginTop="@dimen/margin16"
                 android:background="@android:color/darker_gray" />
 
-            <!---TeamB-->
+            <!---Manchester-->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -182,7 +190,7 @@
                     android:onClick="goalForManchester"
                     android:text="@string/goal"
                     android:textAllCaps="true"
-                    android:theme="@style/AppTheme.Grey" />
+                    android:theme="@style/AppTheme.Green" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -199,7 +207,7 @@
                         android:onClick="foulForManchester"
                         android:text="@string/foul"
                         android:textAllCaps="true"
-                        android:theme="@style/AppTheme.Grey" />
+                        android:theme="@style/AppTheme.Green" />
 
                     <TextView
                         android:id="@+id/manchester_foul"
@@ -208,20 +216,20 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:text="0" />
+                        android:text="@string/_0" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginBottom="30dp">
+                    android:layout_marginBottom="@dimen/margin32">
 
                     <Button
                         android:id="@+id/red_manchester"
                         style="?android:attr/borderlessButtonStyle"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
+                        android:layout_width="@dimen/button_width"
+                        android:layout_height="@dimen/button_height"
                         android:background="@drawable/icon_red_card"
                         android:onClick="redCardManchester"
                         android:text="" />
@@ -229,8 +237,8 @@
                     <Button
                         android:id="@+id/yellow_manchester"
                         style="?android:attr/borderlessButtonStyle"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
+                        android:layout_width="@dimen/button_width"
+                        android:layout_height="@dimen/button_height"
                         android:background="@drawable/icon_yelow_card"
                         android:onClick="yellowCardManchester"
                         android:text="" />
@@ -243,12 +251,12 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
+            android:layout_below="@id/match_box"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="@dimen/margin32"
+            android:layout_marginTop="@dimen/margin16"
             android:gravity="center"
             android:onClick="resetScore"
             android:text="@string/reset"
-            android:theme="@style/AppTheme.Grey" />
+            android:theme="@style/AppTheme.Green" />
     </RelativeLayout>
 </ScrollView>

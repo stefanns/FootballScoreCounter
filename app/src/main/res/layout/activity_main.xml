@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/header"
         android:layout_margin="20dp"
-        android:background="@drawable/layout_bg"
+        android:background="@drawable/match_box"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -79,7 +79,7 @@
                 android:layout_marginRight="@dimen/margin24"
                 android:onClick="goalForLiverpool"
                 android:text="@string/goal"
-                android:theme="@style/AppTheme.Grey"
+                android:theme="@style/AppTheme.Green"
                 android:textAllCaps="true" />
 
             <LinearLayout
@@ -95,7 +95,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
                     android:onClick="foulForLiverpool"
-                    android:theme="@style/AppTheme.Grey"
+                    android:theme="@style/AppTheme.Green"
                     android:text="@string/foul"
                     android:textAllCaps="true" />
 
@@ -118,8 +118,8 @@
                 <Button
                     android:id="@+id/red_liverpool"
                     style="?android:attr/borderlessButtonStyle"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
                     android:background="@drawable/icon_red_card"
                     android:onClick="redCardLiverpool"
                     android:text="" />
@@ -127,8 +127,8 @@
                 <Button
                     android:id="@+id/yellow_liverpool"
                     style="?android:attr/borderlessButtonStyle"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
                     android:background="@drawable/icon_yelow_card"
                     android:onClick="yellowCardLiverpool"
                     android:text="" />
@@ -141,6 +141,7 @@
             android:layout_width="1dp"
             android:layout_height="match_parent"
             android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/margin16"
             android:layout_marginTop="@dimen/margin16"
             android:background="@android:color/darker_gray" />
 
@@ -175,7 +176,7 @@
                 android:layout_marginLeft="@dimen/margin24"
                 android:layout_marginRight="@dimen/margin24"
                 android:onClick="goalForManchester"
-                android:theme="@style/AppTheme.Grey"
+                android:theme="@style/AppTheme.Green"
                 android:text="@string/goal"
                 android:textAllCaps="true"
                 />
@@ -193,7 +194,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
                     android:onClick="foulForManchester"
-                    android:theme="@style/AppTheme.Grey"
+                    android:theme="@style/AppTheme.Green"
                     android:text="@string/foul"
                     android:textAllCaps="true" />
 
@@ -216,8 +217,8 @@
                 <Button
                     android:id="@+id/red_manchester"
                     style="?android:attr/borderlessButtonStyle"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
                     android:background="@drawable/icon_red_card"
                     android:onClick="redCardManchester"
                     android:text="" />
@@ -225,8 +226,8 @@
                 <Button
                     android:id="@+id/yellow_manchester"
                     style="?android:attr/borderlessButtonStyle"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
                     android:background="@drawable/icon_yelow_card"
                     android:onClick="yellowCardManchester"
                     android:text="" />
@@ -241,7 +242,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="@dimen/margin32"
-        android:theme="@style/AppTheme.Grey"
+        android:theme="@style/AppTheme.Green"
         android:gravity="center"
         android:onClick="resetScore"
         android:text="@string/reset" />
