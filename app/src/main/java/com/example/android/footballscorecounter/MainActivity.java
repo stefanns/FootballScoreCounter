@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
         else {
             scoreManchester = 3;
             scoreLiverpool = 0;
-            //redCardLiverpool = 5;
+            redCardLiverpool = 5;
             displayLiverpoolScore(scoreLiverpool);
             displayManchesterScore(scoreManchester);
             displayredCardLiverpool(redCardLiverpool);
@@ -125,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
         else {
             scoreLiverpool = 3;
             scoreManchester = 0;
-            //redCardManchester = 5;
+            redCardManchester = 5;
             displayLiverpoolScore(scoreLiverpool);
             displayManchesterScore(scoreManchester);
             displayredCardManchester(redCardManchester);
