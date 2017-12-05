@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:fillViewport="true"
     tools:context="com.example.android.footballscorecounter.MainActivity">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -34,14 +35,13 @@
 
         <TextView
             android:id="@+id/header"
+            style="@style/header"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="@dimen/margin16"
             android:gravity="center"
-            android:text="@string/matches"
-            android:textColor="#ffffff"
-            android:textSize="20sp" />
+            android:text="@string/matches" />
 
         <LinearLayout
             android:id="@+id/match_box"
