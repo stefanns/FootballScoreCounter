@@ -1,7 +1,5 @@
 <resources>
     <string name="app_name">Court Counter</string>
-    <string name="team_a">Liverpool</string>
-    <string name="team_b">Manchester United</string>
     <string name="_0">0</string>
     <string name="foul">fouls</string>
     <string name="goal">goal</string>

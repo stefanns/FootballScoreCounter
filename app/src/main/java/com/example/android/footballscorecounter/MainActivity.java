@@ -86,6 +86,7 @@ public class MainActivity extends AppCompatActivity {
             displayLiverpoolScore(scoreLiverpool);
             displayManchesterScore(scoreManchester);
             displayredCardLiverpool(redCardLiverpool);
+            // reset score after 5 red cards
             scoreLiverpool = 0;
             scoreManchester = 0;
             foulLiverpool = 0;
@@ -129,6 +130,7 @@ public class MainActivity extends AppCompatActivity {
             displayLiverpoolScore(scoreLiverpool);
             displayManchesterScore(scoreManchester);
             displayredCardManchester(redCardManchester);
+            // reset score after 5 red cards
             scoreLiverpool = 0;
             scoreManchester = 0;
             foulLiverpool = 0;

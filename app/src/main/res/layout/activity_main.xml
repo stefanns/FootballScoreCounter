@@ -34,7 +34,7 @@
         android:text="@string/matches"
         android:textColor="#ffffff"
         android:textSize="20sp" />
-    <!---TeamA-->
+    <!---Liverpool-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -136,7 +136,7 @@
 
 
         </LinearLayout>
-
+        <!---Bar between teams-->
         <View
             android:layout_width="1dp"
             android:layout_height="match_parent"
@@ -145,7 +145,7 @@
             android:layout_marginTop="@dimen/margin16"
             android:background="@android:color/darker_gray" />
 
-        <!---TeamB-->
+        <!---Manchester-->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
