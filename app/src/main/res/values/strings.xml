@@ -1,9 +1,11 @@
 <resources>
     <string name="app_name">Court Counter</string>
-    <string name="_0">0</string>
+    <string name="zero">0</string>
     <string name="foul">fouls</string>
     <string name="goal">goal</string>
     <string name="free_throw">free Throw</string>
     <string name="reset">RESET</string>
     <string name="matches">Matches</string>
+    <string name="liverpool">liverpool</string>
+    <string name="manchester">manchester</string>
 </resources>

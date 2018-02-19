@@ -30,7 +30,7 @@
                 android:layout_weight="5"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
-                android:src="#E4DED7" />
+                android:src="@color/background" />
         </LinearLayout>
 
         <TextView
@@ -38,9 +38,6 @@
             style="@style/header"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="@dimen/margin16"
-            android:gravity="center"
             android:text="@string/matches" />
 
         <LinearLayout
@@ -62,38 +59,25 @@
                 android:layout_weight="1"
                 android:orientation="vertical">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
 
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="100dp"
-                        android:gravity="center_horizontal"
-                        android:paddingTop="16dp"
-                        android:src="@drawable/liverpool" />
-                </LinearLayout>
+                <ImageView
+                    style="@style/team_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:contentDescription="@string/liverpool"
+                    android:src="@drawable/liverpool" />
 
                 <TextView
                     android:id="@+id/liverpol_score"
                     style="@style/scoretext"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/margin24"
-                    android:layout_marginTop="@dimen/margin16"
-                    android:gravity="center_horizontal"
-                    android:text="@string/_0" />
+                    android:text="@string/zero" />
 
                 <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/margin8"
-                    android:layout_marginLeft="@dimen/margin24"
-                    android:layout_marginRight="@dimen/margin24"
+                    style="@style/goal"
                     android:onClick="goalForLiverpool"
-                    android:text="@string/goal"
-                    android:textAllCaps="true"
-                    android:theme="@style/AppTheme.Green" />
+                    android:text="@string/goal" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -104,13 +88,12 @@
                     android:orientation="horizontal">
 
                     <Button
+                        style="@style/foul"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
                         android:onClick="foulForLiverpool"
-                        android:text="@string/foul"
-                        android:textAllCaps="true"
-                        android:theme="@style/AppTheme.Green" />
+                        android:text="@string/foul" />
 
                     <TextView
                         android:id="@+id/liverpool_foul"
@@ -118,8 +101,7 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="@string/_0" />
+                        android:text="@string/zero" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -142,7 +124,7 @@
                         style="?android:attr/borderlessButtonStyle"
                         android:layout_width="@dimen/button_width"
                         android:layout_height="@dimen/button_height"
-                        android:background="@drawable/icon_yelow_card"
+                        android:background="@drawable/icon_yellow_card"
                         android:onClick="yellowCardLiverpool"
                         android:text="" />
                 </LinearLayout>
@@ -165,10 +147,10 @@
                 android:orientation="vertical">
 
                 <ImageView
+                    style="@style/team_image"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
-                    android:gravity="center_horizontal"
-                    android:paddingTop="16dp"
+                    android:contentDescription="@string/manchester"
                     android:src="@drawable/manchester_united" />
 
                 <TextView
@@ -176,21 +158,12 @@
                     style="@style/scoretext"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/margin24"
-                    android:layout_marginTop="@dimen/margin16"
-                    android:gravity="center_horizontal"
-                    android:text="@string/_0" />
+                    android:text="@string/zero" />
 
                 <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/margin8"
-                    android:layout_marginLeft="@dimen/margin24"
-                    android:layout_marginRight="@dimen/margin24"
+                    style="@style/goal"
                     android:onClick="goalForManchester"
-                    android:text="@string/goal"
-                    android:textAllCaps="true"
-                    android:theme="@style/AppTheme.Green" />
+                    android:text="@string/goal" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -201,13 +174,12 @@
                     android:orientation="horizontal">
 
                     <Button
+                        style="@style/foul"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
                         android:onClick="foulForManchester"
-                        android:text="@string/foul"
-                        android:textAllCaps="true"
-                        android:theme="@style/AppTheme.Green" />
+                        android:text="@string/foul" />
 
                     <TextView
                         android:id="@+id/manchester_foul"
@@ -215,8 +187,7 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="@string/_0" />
+                        android:text="@string/zero" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -239,7 +210,7 @@
                         style="?android:attr/borderlessButtonStyle"
                         android:layout_width="@dimen/button_width"
                         android:layout_height="@dimen/button_height"
-                        android:background="@drawable/icon_yelow_card"
+                        android:background="@drawable/icon_yellow_card"
                         android:onClick="yellowCardManchester"
                         android:text="" />
                 </LinearLayout>
@@ -249,14 +220,12 @@
         </LinearLayout>
 
         <Button
+            style="@style/reset"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/match_box"
-            android:layout_centerHorizontal="true"
             android:layout_marginTop="@dimen/margin16"
-            android:gravity="center"
             android:onClick="resetScore"
-            android:text="@string/reset"
-            android:theme="@style/AppTheme.Green" />
+            android:text="@string/reset" />
     </RelativeLayout>
 </ScrollView>
